@@ -1,7 +1,8 @@
 # bibmd
 
 A zen Markdown reader that edits a block in place when it is clicked, and runs the small
-programs in it. Wayland, one Native AOT binary for x86_64 Linux, no runtime.
+programs in it. Built on [bibui](https://navisurgvision.com/bibui/); Wayland, one Native AOT
+binary for x86_64 Linux, no runtime.
 
 ![bibmd: a sourdough notebook with live sliders, a timetable and charts, changing Omarchy themes](media/bibmd-demo.gif)
 
@@ -38,6 +39,14 @@ The package also installs it, as `/usr/share/doc/bibmd/examples/sourdough.bib.md
 somewhere of your own first, because opening a block edits the file.
 
 Press `?` in the window for every key.
+
+## Built on bibui
+
+Everything in the window, the reader, the editor and every slider, chart and shape a bib
+block draws, is drawn by [bibui](https://navisurgvision.com/bibui/), an immediate-mode UI
+library for .NET from Navisurg Vision. Its rasterizer, written in C#, is why bibmd is a
+single native binary. To build your own app on it, start with
+[the bibui documentation](https://navisurgvision.com/bibui/).
 
 ## Install
 
